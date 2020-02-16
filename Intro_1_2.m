@@ -5,4 +5,4 @@ D=polyfit(Light,rmax,2)
 xvals=0:120;
 yhat=polyval(C,xvals);
 yyhat=polyval(D,xvals);
-plot(log(Light),rmax,'+',xvals,yhat,xvals,yyhat)
+plot(Light,rmax,'+',xvals,yhat,xvals,yyhat)
