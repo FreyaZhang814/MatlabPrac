@@ -1,0 +1,8 @@
+%n=zeros(30,1);
+x=(1.1.^(0:30))
+x*2
+%n=400*x
+%min(log(p))-1:max(log(p))-1
+%min(log(pa))-1:max(log(pa))-1
+%plot(log(n'),1:30,'+',0:90,0:90)
+%plot(log(pa'),1:30,'-',0:90,0:90)
