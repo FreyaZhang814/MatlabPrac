@@ -6,3 +6,4 @@ x = initialsize.*newsize
 y = initialsize./finalsize
 z = 0: 1: 10
 w = linspace(0,10,5)
+c=initialsize(4:2:6)
