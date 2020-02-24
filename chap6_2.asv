@@ -1,8 +1,0 @@
-popsize=zeros(5,5);
-popsize(2,1)=0.1;
-popsize(1,1)=1;
-for n=1:4
-popsize(n+1,n)=popsize(n,n-1)+0.1;
-popsize(1,n)=popsize(1,n-1)+1;
-end
-popsize
