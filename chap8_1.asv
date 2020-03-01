@@ -1,0 +1,22 @@
+A=[1 5 0; 6 4 0; 0 1 2];
+L=eig(A);
+j=find(abs(L)==max(abs(L)))
+L1=L(j);
+ndom=length(L1);
+[W,D]=eig(A)
+L=diag(D)
+j=find(abs(L)==max(abs(L)));
+L1=L(j);
+w=W(:,j);
+w=w/sum(w);
+B=transpose(A);
+L2=eig(B);
+j1=find(abs(L2)==max(abs(L2)))
+L3=L2(j1);
+ndom1=length(L3);
+[V,E]=eig(B)
+L2=diag(E)
+j=find(abs(L)==max(abs(L)));
+L1=L(j);
+w=W(:,j);
+w=w/sum(w);
