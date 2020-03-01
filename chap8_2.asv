@@ -1,4 +1,10 @@
-A=[1 5 0; 6 4 0; 0 1 2];
+p=[0.3 0.4 0.5 0.6 0.6 0.7];
+A=zeros(7,7);
+for n=1:6
+    A(n+1,n)=p(n);
+end
+A(1,7)=12;
+A(7,7)=0.9;
 L=eig(A);
 j=find(abs(L)==max(abs(L)))
 L1=L(j);
@@ -8,15 +14,12 @@ L=diag(D)
 j=find(abs(L)==max(abs(L)));
 L1=L(j);
 w=W(:,j);
-w=w/sum(w);
-B=transpose(A);
-L2=eig(B);
+L2=eig(transpose(A));
 j1=find(abs(L2)==max(abs(L2)))
 L3=L2(j1);
-ndom1=length(L3);
-[V,E]=eig(B)
+ndom=length(L3);
+[V,E]=eig(transpose(A))
 L2=diag(E)
 j1=find(abs(L2)==max(abs(L2)));
 L3=L2(j1);
-v=V(:,j1);
-v=v/v(1);
+v=V(:,j);
