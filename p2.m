@@ -1,0 +1,10 @@
+time=0:0.1:10;
+tau=1;
+V1=1-exp(-time/tau);
+V2=time/tau;
+V3=tau*time;
+V4=(tau^2)*time;
+plot(time,V1)
+plot(time,V2)
+plot(time,V3)
+plot(time,V4)
