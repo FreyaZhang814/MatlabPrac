@@ -7,4 +7,4 @@ V1=1-exp(-time/tau1);
 V2=1-exp(-time/tau2);
 V3=1-exp(-time/tau3);
 V4=1-exp(-time/tau4);
-plot(time,V1,time,V2,time,V3,time,V4,xlabel('time'),ylabel('Vn'))
+plot(time,V1,time,V2,time,V3,time,V4),xlabel('time'),ylabel('Vn')

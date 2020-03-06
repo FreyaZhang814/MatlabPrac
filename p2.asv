@@ -1,1 +1,14 @@
-tau-
+time=0:0.1:10;
+tau1=1;
+tau2=2;
+tau3=3;
+tau4=4;
+V1=1-exp(-time/tau1);
+V2=1-exp(-time/tau2);
+V3=1-exp(-time/tau3);
+V4=1-exp(-time/tau4);
+plot(time,V1,time,V2,time,V3,time,V4,xlabel('time'),ylabel('Vn'))
+A=1;tau5=1;
+time2=0:0.1:2;
+Vt=A*(exp(-time2/tau5)-1+time2/tau5);
+plot(time2,tau5,'g',xlabel('t'),yla)
