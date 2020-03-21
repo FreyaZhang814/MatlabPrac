@@ -67,3 +67,8 @@ figure(9);
 colormap([co;co;co]');
 image(denoiseC);
 
+h=5;
+IBlur = fspecial('average',[1 h]);
+IBlurFil=imfilter(img,IBlur,'replicate');
+imshow(IBlurFil)
+
